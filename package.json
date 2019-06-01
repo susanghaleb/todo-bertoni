@@ -1,9 +1,4 @@
 {
-  "name": "bertoni_crud",
-  "version": "1.0.0",
-  "description": "crud todo react node",
-  "main": "index.js",
-  "author": "suzanne ghaleb",
-  "license": "MIT",
-  "private": true
+  "private": true,
+  "workspaces": ["workspace-server"]
 }
