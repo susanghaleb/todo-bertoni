@@ -1,3 +1,3 @@
-module.exports ={
-    PORT: process.env.DEV = '8082'
-}
+module.exports = {
+  PORT: (process.env.DEV = "8082")
+};

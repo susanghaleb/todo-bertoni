@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import Container from "@material-ui/core/Container";
+import Grid from "@material-ui/core/Grid";
+import ListTodo from "./components/ListTodos/ListTodos";
+import CreteTask from "./components/CreateTask/CreteTask";
+import useHooks from "./helpers/useHooks";
 
-function App() {
+const App = () => {
+  const {
+    todosArray,
+    handleReadTasks,
+    handleCreateTaks,
+    handleDeleteTask,
+    handleCheck
+  } = useHooks();
+
+  useEffect(() => {
+    handleReadTasks();
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container maxWidth="lg">
+      <Grid container spacing={3} justify="center" alignItems="center">
+        <CreteTask submitTask={handleCreateTaks} />
+        <ListTodo
+          tasks={todosArray}
+          onDelete={handleDeleteTask}
+          onCheck={handleCheck}
+        />
+      </Grid>
+    </Container>
   );
-}
+};
 
 export default App;

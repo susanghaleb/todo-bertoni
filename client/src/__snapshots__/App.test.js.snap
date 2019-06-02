@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="MuiContainer-root MuiContainer-maxWidthLg"
+>
+  <div
+    className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3 MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
+  >
+    <div
+      className="MuiGrid-root makeStyles-root-111 MuiGrid-item MuiGrid-grid-lg-12"
+    >
+      <div
+        className="MuiInputBase-root MuiInput-root MuiInput-underline makeStyles-input-113"
+        onClick={[Function]}
+        required={true}
+      >
+        <input
+          className="MuiInputBase-input MuiInput-input"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="What needs to be done?"
+          required={true}
+          type="text"
+          value=""
+        />
+      </div>
+      <button
+        className="MuiButtonBase-root MuiButton-root makeStyles-button-112 MuiButton-containedPrimary MuiButton-contained Mui-disabled Mui-disabled"
+        disabled={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={-1}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          Add todo
+        </span>
+      </button>
+    </div>
+    <ul
+      className="MuiList-root MuiList-padding makeStyles-root-162"
+    />
+  </div>
+</div>
+`;
