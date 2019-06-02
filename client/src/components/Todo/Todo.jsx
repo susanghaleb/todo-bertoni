@@ -36,6 +36,7 @@ const Todo = ({ task, onDelete, onCheck }) => {
           className={done ? classes.textDecoration : ""}
         />
         <Button
+          classkey="delete"
           variant="contained"
           color="secondary"
           className={classes.button}

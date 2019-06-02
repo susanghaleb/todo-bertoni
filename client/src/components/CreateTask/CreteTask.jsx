@@ -32,6 +32,7 @@ const CreteTask = ({ submitTask }) => {
   return (
     <Grid item className={classes.root} lg={12}>
       <Input
+        name="createtodo"
         value={text}
         onChange={handleChange}
         placeholder="What needs to be done?"
@@ -39,6 +40,7 @@ const CreteTask = ({ submitTask }) => {
         className={classes.input}
       />
       <Button
+        classkey="send"
         variant="contained"
         color="primary"
         className={classes.button}
